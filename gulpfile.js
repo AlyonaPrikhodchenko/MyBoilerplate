@@ -139,12 +139,6 @@ function watcher() {
     gulp.watch('src/*.html', gulp.series(html, reload))
 }
 
-// gh-pages
-function deploy() {
-    return gulp.src('build/**/*')
-        .pipe(ghPages());
-}
-
 exports.build = gulp.series(
     clean,
     copy,
@@ -157,9 +151,7 @@ exports.build = gulp.series(
     sprite,
     createWebp
     ),
-    gulp.series(
-        deploy
-));
+);
 
   // Default
 
