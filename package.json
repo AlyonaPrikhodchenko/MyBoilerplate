@@ -4,6 +4,9 @@
   "private": true,
   "description": "MyProject",
   "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
+    "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp",
     "deploy": "gulp build && gh-pages -d build"
@@ -25,6 +28,7 @@
   },
   "homepage": "https://github.com/AlyonaPrikhodchenko/NewProject#readme",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^10.4.7",
     "browser-sync": "^2.27.9",
     "del": "^6.0.0",
@@ -40,7 +44,9 @@
     "gulp-svgstore": "^9.0.0",
     "gulp-terser": "^2.1.0",
     "postcss": "^8.4.13",
-    "postcss-csso": "^6.0.0"
+    "postcss-csso": "^6.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-htmlacademy": "^0.1.12"
   },
   "dependencies": {
     "gh-pages": "^3.2.3"
