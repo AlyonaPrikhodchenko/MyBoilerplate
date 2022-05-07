@@ -46,7 +46,8 @@
     "postcss": "^8.4.13",
     "postcss-csso": "^6.0.0",
     "stylelint": "^13.13.1",
-    "stylelint-config-htmlacademy": "^0.1.12"
+    "stylelint-config-htmlacademy": "^0.1.12",
+    "stylelint-order": "^4.1.0"
   },
   "dependencies": {
     "gh-pages": "^3.2.3"
