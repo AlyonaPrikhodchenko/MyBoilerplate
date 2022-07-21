@@ -66,8 +66,7 @@ function copyImages() {
 function createWebp() {
     return gulp.src('src/img/**/*.{jpg,png}')
     .pipe(squoosh({
-    webp: {},
-    avif: {}
+    webp: {}
     }))
     .pipe(gulp.dest('build/img'));
 }
