@@ -17,7 +17,7 @@ const sourcemaps = require('gulp-sourcemaps');
 // Styles
 
 function styles() {
-    return gulp.src("src/sass/**/*.scss")
+    return gulp.src("src/sass/style.scss")
     .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
