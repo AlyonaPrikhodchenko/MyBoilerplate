@@ -1,4 +1,7 @@
-body {
-  position: relative;
-  color: #f1f1f1;
-}
+@import "./variables";
+@import "./fonts";
+@import "./mixin";
+@import "./visually-hidden";
+@import "./container";
+@import "./blocks/page";
+
